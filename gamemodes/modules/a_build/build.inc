@@ -1,0 +1,11 @@
+#include "modules/a_build/mapping_build.inc"
+
+#include "modules/a_build/def_build.inc"
+#include "modules/a_build/var_build.inc"
+#include "modules/a_build/enum_build.inc"
+#include "modules/a_build/func_build.inc"
+#include "modules/a_build/misc_build.inc"
+#include "modules/a_build/cmd_build.inc"
+#include "modules/a_build/dlg_build.inc"
+#include "modules/a_build/mode_build.inc"
+#include "modules/a_build/timer_build.inc"
