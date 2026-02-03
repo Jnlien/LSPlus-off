@@ -1,0 +1,58 @@
+enum EMERGENCY_ENUM
+{
+	callExists,
+	callType,
+	callName[MAX_PLAYER_NAME],
+	callPhone,
+	callText[128],
+	callLocation[128],
+	callDate[32],
+	Float: callPosX,
+	Float: callPosY,
+	Float: callPosZ,
+	callAccept,
+	callAcceptBy[65],
+	callDelete
+}
+new CallInfo[MAX_CALLS_AND_ARREST][EMERGENCY_ENUM];
+
+enum APB_ENUM
+{
+	apbID,
+	apbCharge[128],
+	apbSuspect[MAX_PLAYER_NAME],
+	apbOfficer[MAX_PLAYER_NAME],
+	apbDate[32],
+	apbOn,
+	apbFaction
+}
+new ApbInfo[MAX_APBS][APB_ENUM];
+
+enum ARREST_ENUM
+{
+	arrestSuspect[MAX_PLAYER_NAME],
+	arrestOfficer[MAX_PLAYER_NAME],
+	arrestDate[32],
+	arrestTime,
+	arrestExists,
+	arrestDelete
+}
+new ArrestInfo[MAX_CALLS_AND_ARREST][ARREST_ENUM];
+
+enum PATROL_ENUM
+{
+	patrulExists,
+	patrulName[32],
+	patrulOfficer[2]
+}
+new PatrolInfo[2][MAX_PATROL][PATROL_ENUM];
+
+enum SPIKE_ENUM
+{
+	sCreated,
+    Float:sX,
+    Float:sY,
+    Float:sZ,
+    sObject,
+};
+new SpikeInfo[MAX_SPIKE][SPIKE_ENUM];
